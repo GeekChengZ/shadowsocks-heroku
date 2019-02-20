@@ -34,14 +34,15 @@ Heroku 提供免费账号，部分介绍如下：
 
 支持的加密算法类型如下https://github.com/mrluanma/shadowsocks-heroku#supported-ciphers
 
-## 启动本地 Client
+## WINDOWS
+### 启动本地 Client
 1. 下载release https://github.com/onplus/shadowsocks-heroku/releases （[备份](https://github.com/onplus/archive/tree/master/tool)）
 
 2. 修改config.json参数，运行ss-h.exe 或 start.vbs (或 [win托盘工具taskbar.exe](https://github.com/onplus/shadowsocks-heroku/issues/39))
 
 5. 启动成功，命令行显示：`server listening at { address: '127.0.0.1', family: 'IPv4', port: 1080 }`
 
-## 配置代理
+### 配置代理
 1. 下载：Chrome 浏览器 [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/releases) 插件（[参考教程](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList), 导入备份文件[SSHeroku.Bak.zip](https://github.com/onplus/shadowsocks-heroku/files/1371313/SSHeroku.zip)）
 
 2. 安装：打开浏览器的扩展程序页面 `chrome://extensions`，把 `SwitchyOmega.crx` 文件拖放到浏览器扩展程序页面安装 
@@ -52,7 +53,28 @@ Heroku 提供免费账号，部分介绍如下：
     代理服务器local_address：127.0.0.1 
     代理端口local_port： 1080 
 ```
-    
+## ANDROID 
+  下载APP：Kitsunebi
+  地址：https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android
+  配置：
+  ```
+    "outbound": {
+    "protocol": "shadowsocks",
+    "settings": {
+      "servers": [
+        {
+          "address": "appname.herokuapp.com",
+          "port": 80,
+          "method": "aes-256-cfb",
+          "password": "password",
+          "ota": false
+        }
+      ]
+    },
+    "mux": {
+      "enabled": false
+    } 
+  ```
 ## 可选：
 1. 使用无污染DNS https://www.zhihu.com/question/32229915
 2. cow/meow智能代理  https://github.com/cyfdecyf/cow#cow-climb-over-the-wall-proxy
