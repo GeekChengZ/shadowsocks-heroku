@@ -56,7 +56,7 @@ Heroku 提供免费账号，部分介绍如下：
 ## ANDROID 
   下载APP：Kitsunebi
   地址：https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android
-  配置：
+  部分配置：
   ```
     "outbound": {
     "protocol": "shadowsocks",
@@ -83,4 +83,3 @@ Heroku 提供免费账号，部分介绍如下：
     listen = http://127.0.0.1:7777
     proxy = socks5://127.0.0.1:1080
 ```
-3. 网站导航 http://www.ipv6daohang.com/
