@@ -56,6 +56,7 @@ Heroku 提供免费账号，部分介绍如下：
 ## ANDROID 
   下载APP：Kitsunebi
   地址：https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android
+  HELP: https://github.com/eycorsican/kitsunebi-android/blob/master/README.md
   部分配置：
   ```
     "outbound": {
